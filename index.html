@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="download (1).jpeg" type="image/x-icon">
+ <title>Flower Bank App</title>
+</head>
+
+<body class="bg-blue-50 text-gray-800 font-sans min-h-screen flex flex-col items-center p-6">
+
+  <div class="w-full max-w-md bg-white rounded-2xl  p-6 space-y-6">
+    <h1 class="text-3xl font-bold text-center text-blue-700"> Flower Bank</h1>
+
+    <!-- Current Balance -->
+    <div class="text-center">
+      <h2 class="text-lg">Balance</h2>
+      <p id="balance" class="text-4xl font-bold ">৳0</p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex justify-around">
+      <button onclick="show('add')" class="  px-4 py-2 rounded-xl text-green-600 ">Taka Add</button>
+      <button onclick="show('withdraw')" class=" text-red-600  px-4 py-2 rounded-xl ">Taka withdraw</button>
+      <button onclick="show('history')" class="  px-4 py-2 rounded-xl ">History</button>
+    </div>
+
+    <!-- Add  -->
+    <div id="add-section" class="hidden">
+      <h3 class="text-xl font-semibold mb-2">Add Please</h3>
+      <input id="add-amount" class="w-full border p-2 rounded mb-2" placeholder="Amount ">
+      <button onclick="addMoney()" class="w-full bg-green-500 text-white py-2 rounded ">Add</button>
+      <p id="add-error" class="text-red-600 mt-2 text-sm"></p>
+    </div>
+
+    <!-- Withdraw  -->
+    <div id="withdraw-section" class="hidden">
+      <h3 class="text-xl font-semibold mb-2">withdraw Please</h3>
+      <input id="withdraw-amount" class="w-full border p-2 rounded mb-2" placeholder="Amount">
+      <button onclick="withdrawMoney()" class="w-full bg-red-500 text-white py-2 rounded ">withdraw</button>
+      <p id="withdraw-error" class="text-red-600 mt-2 text-sm"></p>
+    </div>
+
+    <!-- Transaction History -->
+    <div id="history-section" class="hidden">
+      <h3 class="text-xl font-semibold mb-2"> History Amount </h3>
+      <ul id="history-list" class="text-sm space-y-1 max-h-48 overflow-y-auto"></ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
